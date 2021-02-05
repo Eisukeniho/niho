@@ -28,22 +28,27 @@
 ## 実装
 ### SlackへのZoomのミーティングURLの投稿
 IFTTTを使用し、GoogleCalendarから会議の日程を取得する。そして取得した時間の一定時間前に任意の会議室のURLをSlackへ通知する。以下は実装時の画面である。
+
 ![Test Image 1](e.png)
 
 上の画面からGoogleCalendar->Slackを選択する。次に取得するカレンダーを選択し通知したいミーティングURLを入力することで、カレンダーに記載された時間前に自動的にミーティングURLをSlackへ通知することができる。
 
 ### 議事録のテンプレートの作成
 GoogleAssistantを使用し、前回の会議後にまとめた内容を取得しIFTTTへ受け渡し、GoogleDocumentへ記入する。上のIFTTT使用時の画面から、createを選択する。以下は、createを選択する際の画面である。
+
 ![Test Image 1](f.png)
 
 次にトリガーの設定を行う。GoogleAssistantをthisとして選択する。最後に、GoogleDocsをthatとして選択する。以下はGoogleDocsを選択する際の画面である。
+
 ![Test Image 1](g.png)
 
 ### 音声でのGoogle Calendarへの予定の追加
 GoogleNestHubとGoogleカレンダーを同期する。そしてIFTTTを使用してSlackとGoogleCalendarの連携を行う。まず、SlackでGoogleCalendarを追加し、接続したいGoogleアカウントを選択する。以下はSlackでのGoogleCalendarの追加時の画面である。
+
 ![Test Image 1](h.png)
 
 追加が完了すれば、Slackのテキスト画面の左下の雷マークから、GoogleCalendarへの予定の追加を行う。以下は、SlackからGoogleCalendarへの予定の追加時の画面である。
+
 ![Test Image 1](i.png)
 
 ### 音声での会議内容のメモの作成
