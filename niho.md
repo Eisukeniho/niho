@@ -31,25 +31,25 @@ IFTTTを使用し、GoogleCalendarから会議の日程を取得する。そし�
 
 ![Test Image 1](e.png)
 
-上の画面からGoogleCalendar->Slackを選択する。次に取得するカレンダーを選択し通知したいミーティングURLを入力することで、カレンダーに記載された時間前に自動的にミーティングURLをSlackへ通知することができる。
+上の画面からGoogleCalendar->Slackを選択する。次に取得するカレンダーを選択し、通知したいミーティングURLを入力することで、カレンダーに記載された時間前に自動的にミーティングURLをSlackへ通知することができる。
 
 ### 議事録のテンプレートの作成
-GoogleAssistantを使用し、前回の会議後にまとめた内容を取得しIFTTTへ受け渡し、GoogleDocumentへ記入する。上のIFTTT使用時の画面から、createを選択する。以下は、createを選択する際の画面である。
+GoogleAssistantを使用し、前回の会議後にまとめた内容を取得しIFTTTへ受け渡し、GoogleDocumentへ記入する。上のIFTTT使用時の画面から、createを選択する。次にトリガーの設定を行う。GoogleAssistantをthisとして選択する。以下は、GoogleAssistantをthisとして選択する際の画面である。
 
 ![Test Image 1](f.png)
 
-次にトリガーの設定を行う。GoogleAssistantをthisとして選択する。最後に、GoogleDocsをthatとして選択する。以下はGoogleDocsを選択する際の画面である。
+最後に、GoogleDocsをthatとして選択する。以下はGoogleDocsを選択する際の画面である。
 
 ![Test Image 1](g.png)
 
 ### 音声でのGoogle Calendarへの予定の追加
-GoogleNestHubとGoogleカレンダーを同期する。そしてIFTTTを使用してSlackとGoogleCalendarの連携を行う。まず、SlackでGoogleCalendarを追加し、接続したいGoogleアカウントを選択する。以下はSlackでのGoogleCalendarの追加時の画面である。
+GoogleNestHubとGoogleカレンダーを同期する。GoogleHomeの設定から、アシスタントの設定を選択する。
 
-![Test Image 1](h.png)
+![Test Image 1](j.png)
 
-追加が完了すれば、Slackのテキスト画面の左下の雷マークから、GoogleCalendarへの予定の追加を行う。以下は、SlackからGoogleCalendarへの予定の追加時の画面である。
+アシスタントの設定を選択した後に、カレンダーを選択し、GoogleNestHubと同期させたいカレンダーを選ぶ。
 
-![Test Image 1](i.png)
+![Test Image 1](k.png)
 
 ### 音声での会議内容のメモの作成
 IFTTTを使用しGoogleNesuHubが音声で受け取ったメモの情報をGoogleDocumentへ記入する。上記の、議事録のテンプレートの作成の際と同じやり方で設定を行う。
